@@ -4,8 +4,6 @@
 
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
 
-
-
     <appender name="fileRecive" class="org.apache.log4j.DailyRollingFileAppender">
         <param name="File" value="/data/logs/message/recive.log"/>
         <param name="Encoding" value="UTF-8"/>
