@@ -17,6 +17,7 @@ public class DemoHandler extends AbstractHandler {
     @Autowired
     private DemoService demoService;
 
+
     @Cmd(20100)
     public CommandResult test(Command command, String name) {
         CommandResult result = demoService.test(command.getUid(), "Hello:" + name);
