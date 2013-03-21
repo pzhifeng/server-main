@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+
+    <appender name="fileRecive" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/data/logs/message/recive.log"/>
+        <param name="Encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss} %m %n"/>
+        </layout>
+    </appender>
+
+
+    <appender name="fileSend" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/data/logs/message/send.log"/>
+        <param name="Encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss} %m %n"/>
+        </layout>
+    </appender>
+
+
+    <appender name="fileMonitor" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/data/logs/monitor/monitor.log"/>
+        <param name="Encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss} %m %n"/>
+        </layout>
+    </appender>
+     <appender name="fileOnline" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/data/logs/monitor/online.log"/>
+        <param name="Encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss} %m %n"/>
+        </layout>
+    </appender>
+<!--    <appender name="fileChat" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/data/logs/monitor/chat.log"/>
+        <param name="Encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss} %m %n"/>
+        </layout>
+    </appender>-->
+    <appender name="fileWarn" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/data/log/monitor/warn.log"/>
+        <param name="Encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss} %m %n"/>
+        </layout>
+    </appender>
+
+
+<!--    <appender name="filePay" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/data/logs/money/pay.log"/>
+        <param name="Encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss} %m %n"/>
+        </layout>
+    </appender>
+
+
+    <appender name="fileExpend" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/data/logs/money/expend.log"/>
+        <param name="Encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss} %m %n"/>
+        </layout>
+    </appender>
+
+
+    <appender name="fileActive" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/data/logs/active/active.log"/>
+        <param name="Encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yy-MM-dd HH:mm:ss} %m %n"/>
+        </layout>
+    </appender>-->
+
+
+    <logger name="xn.core.DispatchService" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="fileRecive"/>
+    </logger>
+
+
+    <logger name="xn.core.CommandExecutor" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="fileSend"/>
+    </logger>
+
+
+    <logger name="xn.core.Monitor" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="fileMonitor"/>
+    </logger>
+    <logger name="xn.core.Online" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="fileOnline"/>
+    </logger>
+<!--    <logger name="xn.core.online.Sessionsadditivity="false">
+        <level value="info"/>
+        <appender-ref ref="fileChat"/>
+    </logger>-->
+    <logger name="xn.hero.service.CloseService" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="fileMonitor"/>
+    </logger>
+
+
+<!--    <logger name="xn.hero.service.PayService" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="filePay"/>
+    </logger>
+
+    <logger name="xn.hero.cache.UserCache" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="fileExpend"/>
+    </logger>
+
+
+    <logger name="xn.hero.service.ActiveService" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="fileActive"/>
+    </logger>-->
+
+    <root>
+        <level value="warn"/>
+        <appender-ref ref="fileWarn"/>
+    </root>
+
+
+</log4j:configuration>
+
