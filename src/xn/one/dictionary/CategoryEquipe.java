@@ -28,6 +28,8 @@ public class CategoryEquipe extends Entity {
 
     private String formulaEnhance;
 
+    private int coins;
+
 
     public int getCagegory() {
         return cagegory;
@@ -107,5 +109,13 @@ public class CategoryEquipe extends Entity {
 
     public void setFormulaEnhance(String formulaEnhance) {
         this.formulaEnhance = formulaEnhance;
+    }
+
+    public int getCoins() {
+        return coins;
+    }
+
+    public void setCoins(int coins) {
+        this.coins = coins;
     }
 }

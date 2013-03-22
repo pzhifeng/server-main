@@ -39,19 +39,21 @@
         <property name="minEvictableIdleTimeMillis" value="1800000"/>
     </bean>
 
-    <bean class="xn.core.ServerConfig">
-        <property name="domain" value="192.168.0.111"/>
-        <property name="ports" value="61114"/>
+    <bean id="serverConfig" class="xn.core.ServerConfig">
+        <property name="version" value="1.0.0"/>
+        <property name="domain" value="192.168.1.56"/>
+        <property name="ports" value="80"/>
         <!--是否需登录状态及需passport验证-->
         <property name="checkPassport" value="true"/>
         <property name="key" value="5dcd73d391c90e8769618d42a916ea1b"/>
         <property name="variable" ref="variable"/>
     </bean>
-    <bean class="xn.core.Variable">
+    <bean id="variable" class="xn.core.Variable">
         <!--屏蔽消息验证消息 key=消息头 value=1表不需检测-->
         <property name="validate">
             <map>
                 <entry key="10100" value="1"/>
+                <entry key="10101" value="1"/>
             </map>
         </property>
     </bean>

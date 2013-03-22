@@ -13,9 +13,6 @@ import javax.annotation.PostConstruct;
  */
 public class CheckService implements ICheckService {
 
-    @Autowired
-    @Qualifier("cache")
-    private ICache cache;
 
     /**
      * 初始化持久化的无效IP和账号

@@ -16,7 +16,7 @@ public class CategoryTowner extends Entity {
 
     private int prizeSoul;
 
-    private String prizeEquip;
+    private String prizeEquipe;
 
     public int getNpcId() {
         return npcId;
@@ -50,11 +50,11 @@ public class CategoryTowner extends Entity {
         this.prizeSoul = prizeSoul;
     }
 
-    public String getPrizeEquip() {
-        return prizeEquip;
+    public String getPrizeEquipe() {
+        return prizeEquipe;
     }
 
-    public void setPrizeEquip(String prizeEquip) {
-        this.prizeEquip = prizeEquip;
+    public void setPrizeEquipe(String prizeEquipe) {
+        this.prizeEquipe = prizeEquipe;
     }
 }
