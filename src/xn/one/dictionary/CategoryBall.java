@@ -8,6 +8,8 @@ import xn.core.Entity;
  */
 public class CategoryBall extends Entity {
 
+    private String name;
+
     private String images;
 
     private String effect;
@@ -17,6 +19,14 @@ public class CategoryBall extends Entity {
     private String more;
 
     private String desc;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getImages() {
         return images;

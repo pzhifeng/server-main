@@ -10,6 +10,8 @@ public class CategoryEquipe extends Entity {
 
     private int cagegory;
 
+    private int subCategory;
+
     private int careerId;
 
     private int quality;
@@ -37,6 +39,14 @@ public class CategoryEquipe extends Entity {
 
     public void setCagegory(int cagegory) {
         this.cagegory = cagegory;
+    }
+
+    public int getSubCategory() {
+        return subCategory;
+    }
+
+    public void setSubCategory(int subCategory) {
+        this.subCategory = subCategory;
     }
 
     public int getCareerId() {

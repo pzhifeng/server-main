@@ -16,6 +16,8 @@ public class User extends Entity {
 
     private int status;
 
+    private int careerId;
+
     private int smoney;
 
     private int umoney;
@@ -27,8 +29,6 @@ public class User extends Entity {
     private int exp;
 
     private int points;
-
-    private int soul;
 
     private int copper;
 
@@ -65,6 +65,14 @@ public class User extends Entity {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    public int getCareerId() {
+        return careerId;
+    }
+
+    public void setCareerId(int careerId) {
+        this.careerId = careerId;
     }
 
     public int getSmoney() {
@@ -113,14 +121,6 @@ public class User extends Entity {
 
     public void setPoints(int points) {
         this.points = points;
-    }
-
-    public int getSoul() {
-        return soul;
-    }
-
-    public void setSoul(int soul) {
-        this.soul = soul;
     }
 
     public int getCopper() {

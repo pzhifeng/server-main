@@ -10,7 +10,9 @@ public class CategoryCareer extends Entity {
 
     private String name;
 
-    private String image;
+    private String resource;
+
+    private int weapon;
 
     private int hpMax;
 
@@ -30,8 +32,6 @@ public class CategoryCareer extends Entity {
 
     private float knock;
 
-    private float avoid;
-
     private int skillId;
 
     private String desc;
@@ -44,12 +44,20 @@ public class CategoryCareer extends Entity {
         this.name = name;
     }
 
-    public String getImage() {
-        return image;
+    public String getResource() {
+        return resource;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setResource(String resource) {
+        this.resource = resource;
+    }
+
+    public int getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(int weapon) {
+        this.weapon = weapon;
     }
 
     public int getHpMax() {
@@ -122,14 +130,6 @@ public class CategoryCareer extends Entity {
 
     public void setKnock(float knock) {
         this.knock = knock;
-    }
-
-    public float getAvoid() {
-        return avoid;
-    }
-
-    public void setAvoid(float avoid) {
-        this.avoid = avoid;
     }
 
     public int getSkillId() {

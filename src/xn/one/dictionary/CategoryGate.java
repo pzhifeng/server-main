@@ -12,11 +12,7 @@ public class CategoryGate extends Entity {
 
     private int category;
 
-    private int npc1Id;
-
-    private int npc2Id;
-
-    private int npc3Id;
+    private int npcId;
 
     private String rule;
 
@@ -39,28 +35,12 @@ public class CategoryGate extends Entity {
         this.category = category;
     }
 
-    public int getNpc1Id() {
-        return npc1Id;
+    public int getNpcId() {
+        return npcId;
     }
 
-    public void setNpc1Id(int npc1Id) {
-        this.npc1Id = npc1Id;
-    }
-
-    public int getNpc2Id() {
-        return npc2Id;
-    }
-
-    public void setNpc2Id(int npc2Id) {
-        this.npc2Id = npc2Id;
-    }
-
-    public int getNpc3Id() {
-        return npc3Id;
-    }
-
-    public void setNpc3Id(int npc3Id) {
-        this.npc3Id = npc3Id;
+    public void setNpcId(int npcId) {
+        this.npcId = npcId;
     }
 
     public String getRule() {

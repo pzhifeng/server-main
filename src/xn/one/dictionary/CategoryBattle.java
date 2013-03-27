@@ -14,7 +14,9 @@ public class CategoryBattle extends Entity {
 
     private String points;
 
-    private String prize;
+    private String prizeGate;
+
+    private String prizeBattle;
 
     public String getName() {
         return name;
@@ -40,11 +42,19 @@ public class CategoryBattle extends Entity {
         this.points = points;
     }
 
-    public String getPrize() {
-        return prize;
+    public String getPrizeGate() {
+        return prizeGate;
     }
 
-    public void setPrize(String prize) {
-        this.prize = prize;
+    public void setPrizeGate(String prizeGate) {
+        this.prizeGate = prizeGate;
+    }
+
+    public String getPrizeBattle() {
+        return prizeBattle;
+    }
+
+    public void setPrizeBattle(String prizeBattle) {
+        this.prizeBattle = prizeBattle;
     }
 }

@@ -10,16 +10,24 @@ import java.util.Date;
  */
 public class CategoryMine extends Entity {
 
+    private String image;
+
     private int copper;
 
     private float silver;
 
     private float gold;
 
-    private int ownerUid;
+    private int npcId;
 
-    private Date ownAt;
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
 
     public int getCopper() {
         return copper;
@@ -45,19 +53,11 @@ public class CategoryMine extends Entity {
         this.gold = gold;
     }
 
-    public int getOwnerUid() {
-        return ownerUid;
+    public int getNpcId() {
+        return npcId;
     }
 
-    public void setOwnerUid(int ownerUid) {
-        this.ownerUid = ownerUid;
-    }
-
-    public Date getOwnAt() {
-        return ownAt;
-    }
-
-    public void setOwnAt(Date ownAt) {
-        this.ownAt = ownAt;
+    public void setNpcId(int npcId) {
+        this.npcId = npcId;
     }
 }

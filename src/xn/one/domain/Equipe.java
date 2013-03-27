@@ -2,6 +2,8 @@ package xn.one.domain;
 
 import xn.core.Entity;
 
+import java.util.Date;
+
 /**
  * User: 潘智峰
  * Date: 13-3-21
@@ -16,14 +18,21 @@ public class Equipe extends Entity {
 
     private int base;
 
-    private int enhance;
+    private int lv;
 
     private String addition1;
     private String addition2;
     private String addition3;
-    private String addition4;
-    private String addition5;
 
+    private int enhanceCount;
+
+    private int rebuildCount;
+
+    private int washCount;
+
+    private int coins;
+
+    private Date createAt;
 
     public int getUid() {
         return uid;
@@ -57,12 +66,12 @@ public class Equipe extends Entity {
         this.base = base;
     }
 
-    public int getEnhance() {
-        return enhance;
+    public int getLv() {
+        return lv;
     }
 
-    public void setEnhance(int enhance) {
-        this.enhance = enhance;
+    public void setLv(int lv) {
+        this.lv = lv;
     }
 
     public String getAddition1() {
@@ -89,19 +98,44 @@ public class Equipe extends Entity {
         this.addition3 = addition3;
     }
 
-    public String getAddition4() {
-        return addition4;
+
+    public int getEnhanceCount() {
+        return enhanceCount;
     }
 
-    public void setAddition4(String addition4) {
-        this.addition4 = addition4;
+    public void setEnhanceCount(int enhanceCount) {
+        this.enhanceCount = enhanceCount;
     }
 
-    public String getAddition5() {
-        return addition5;
+    public int getRebuildCount() {
+        return rebuildCount;
     }
 
-    public void setAddition5(String addition5) {
-        this.addition5 = addition5;
+    public void setRebuildCount(int rebuildCount) {
+        this.rebuildCount = rebuildCount;
+    }
+
+    public int getWashCount() {
+        return washCount;
+    }
+
+    public void setWashCount(int washCount) {
+        this.washCount = washCount;
+    }
+
+    public int getCoins() {
+        return coins;
+    }
+
+    public void setCoins(int coins) {
+        this.coins = coins;
+    }
+
+    public Date getCreateAt() {
+        return createAt;
+    }
+
+    public void setCreateAt(Date createAt) {
+        this.createAt = createAt;
     }
 }

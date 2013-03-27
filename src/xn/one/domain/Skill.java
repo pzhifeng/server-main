@@ -2,6 +2,8 @@ package xn.one.domain;
 
 import xn.core.Entity;
 
+import java.util.Date;
+
 /**
  * User: 潘智峰
  * Date: 13-3-21
@@ -12,11 +14,13 @@ public class Skill extends Entity {
 
     private int category;
 
+    private int careerId;
+
     private int lv;
 
     private String values;
 
-    private int soul;
+    private Date createAt;
 
     public int getUid() {
         return uid;
@@ -32,6 +36,14 @@ public class Skill extends Entity {
 
     public void setCategory(int category) {
         this.category = category;
+    }
+
+    public int getCareerId() {
+        return careerId;
+    }
+
+    public void setCareerId(int careerId) {
+        this.careerId = careerId;
     }
 
     public int getLv() {
@@ -50,11 +62,11 @@ public class Skill extends Entity {
         this.values = values;
     }
 
-    public int getSoul() {
-        return soul;
+    public Date getCreateAt() {
+        return createAt;
     }
 
-    public void setSoul(int soul) {
-        this.soul = soul;
+    public void setCreateAt(Date createAt) {
+        this.createAt = createAt;
     }
 }

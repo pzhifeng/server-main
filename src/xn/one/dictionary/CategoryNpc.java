@@ -10,7 +10,7 @@ public class CategoryNpc extends Entity {
 
     private String name;
 
-    private String image;
+    private String resource;
 
     private int lv;
 
@@ -26,8 +26,6 @@ public class CategoryNpc extends Entity {
 
     private float knock;
 
-    private float avoid;
-
     private String skill1;
 
     private String skill2;
@@ -42,12 +40,12 @@ public class CategoryNpc extends Entity {
         this.name = name;
     }
 
-    public String getImage() {
-        return image;
+    public String getResource() {
+        return resource;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setResource(String resource) {
+        this.resource = resource;
     }
 
     public int getLv() {
@@ -104,14 +102,6 @@ public class CategoryNpc extends Entity {
 
     public void setKnock(float knock) {
         this.knock = knock;
-    }
-
-    public float getAvoid() {
-        return avoid;
-    }
-
-    public void setAvoid(float avoid) {
-        this.avoid = avoid;
     }
 
     public String getSkill1() {

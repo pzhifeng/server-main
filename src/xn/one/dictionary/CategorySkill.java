@@ -20,17 +20,7 @@ public class CategorySkill extends Entity {
 
     private String desc;
 
-    private int soul;
-
-    private int category;
-
-    private float value;
-
-    private String formulaLv;
-
     private String formulaValues;
-
-    private String formulaSoul;
 
 
     public int getCareerId() {
@@ -81,38 +71,6 @@ public class CategorySkill extends Entity {
         this.desc = desc;
     }
 
-    public int getSoul() {
-        return soul;
-    }
-
-    public void setSoul(int soul) {
-        this.soul = soul;
-    }
-
-    public int getCategory() {
-        return category;
-    }
-
-    public void setCategory(int category) {
-        this.category = category;
-    }
-
-    public float getValue() {
-        return value;
-    }
-
-    public void setValue(float value) {
-        this.value = value;
-    }
-
-    public String getFormulaLv() {
-        return formulaLv;
-    }
-
-    public void setFormulaLv(String formulaLv) {
-        this.formulaLv = formulaLv;
-    }
-
     public String getFormulaValues() {
         return formulaValues;
     }
@@ -121,11 +79,4 @@ public class CategorySkill extends Entity {
         this.formulaValues = formulaValues;
     }
 
-    public String getFormulaSoul() {
-        return formulaSoul;
-    }
-
-    public void setFormulaSoul(String formulaSoul) {
-        this.formulaSoul = formulaSoul;
-    }
 }

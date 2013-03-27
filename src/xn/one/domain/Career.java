@@ -2,6 +2,8 @@ package xn.one.domain;
 
 import xn.core.Entity;
 
+import java.util.Date;
+
 /**
  * User: 潘智峰
  * Date: 13-3-21
@@ -10,11 +12,11 @@ public class Career extends Entity {
 
     private int uid;
 
+    private int category;
+
     private int lv;
 
     private int exp;
-
-    private int category;
 
     private int hpMax;
 
@@ -42,7 +44,7 @@ public class Career extends Entity {
 
     private float knock;
 
-    private float avoid;
+    private Date createAt;
 
 
     public int getUid() {
@@ -181,11 +183,11 @@ public class Career extends Entity {
         this.knock = knock;
     }
 
-    public float getAvoid() {
-        return avoid;
+    public Date getCreateAt() {
+        return createAt;
     }
 
-    public void setAvoid(float avoid) {
-        this.avoid = avoid;
+    public void setCreateAt(Date createAt) {
+        this.createAt = createAt;
     }
 }

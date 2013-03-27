@@ -16,9 +16,11 @@ public class CategoryProperty extends Entity {
 
     private String values;
 
-    private String desc;
-
     private int coins;
+
+    private int money;
+
+    private String desc;
 
     public int getCategory() {
         return category;
@@ -66,5 +68,13 @@ public class CategoryProperty extends Entity {
 
     public void setCoins(int coins) {
         this.coins = coins;
+    }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
     }
 }
